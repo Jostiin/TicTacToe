@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sigmar', cursive;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: #1A2B33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-target{
+    width:30rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container-target-controls{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+
+.container-target-game{
+    flex: 5;
+
+}
+
+.container-target-points{
+    flex: 1;
+}
+
+/**/
+
+.container-controls-img{
+    display: flex;
+    gap: 1rem;
+}
+
+.container-controls-img-x{
+    color: #35BFC0;
+    font-size: 1.5rem;
+}
+.container-controls-img-o{
+    color: #E0AF55;
+    font-size: 1.5rem;
+}
+/**/
+.container-target-controls-turns{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: #21353E;
+    padding: 0rem 1.5rem;
+    color: white;
+    gap: .5rem;
+    border-radius: 10px;
+    border-bottom: 5px solid #11222E;
+}
+
+/**/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+
+}
+
+.refresh{
+    padding: .3rem;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    background-color: #b3bec4;
+    border-bottom: 3px solid #7f8283;
+}
+
+.refresh:hover{
+    cursor: pointer;
+    background-color: #7f8283;
+    color: #21353E;
+    border-bottom: 3px solid #b3bec4;
+    color: white;
+}
+/**/
+.container-target-game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.target{
+    border: none;
+    box-sizing: border-box;
+    margin: .5rem;
+    width: auto;
+    height: auto;
+    background-color: #1E3640;
+    border-radius: 10px;
+    border-bottom: 7px solid #11222E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+
+
+.target:hover{
+    cursor: pointer;
+    background-color: #11222E;
+    color: #21353E;
+    border-bottom: 7px solid #1E3640;
+    color: white;
+}
+.active:hover{
+    background-color: #1E3640;
+    border-radius: 10px;
+    border-bottom: 7px solid #11222E;
+}
+
+.signo-x{
+    color: #35BFC0;
+}
+.signo-o{
+    color: #E0AF55;
+}
+/**/
+.container-target-points{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.points{
+    color: #003C43;
+    width: auto;
+    height: auto;
+    background-color: white;
+    margin: .5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player{
+    font-size: 12px;
+}
+.points-player1{
+    font-size: 1rem;
+}
+
+.points-x{
+    background-color: #35BFC0;
+    border-bottom: 3px solid #11222E;
+}
+.points-tie{
+    background-color: #b3bec4;
+    border-bottom: 3px solid #11222E;
+}
+.points-o{
+    background-color: #E0AF55;
+    border-bottom: 3px solid #11222E;
+}
+
+/**/
+.modal{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px);
+}
+.modal-target{
+    background-color: #1E3640;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-target-p1{
+    color:#b3bec4 ;
+    font-size: 2rem;
+}
+.modal-target-p2{
+    color:#35BFC0;
+    font-size: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.modal-btn-quit{
+    border: none;
+    background-color:#b3bec4;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    border-bottom: 4px solid #7f8283;
+}
+.modal-btn-next{
+    border: none;
+    background-color:#E0AF55;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    border-bottom: 4px solid #6f5627;
+}
+
+.modal-btn-quit:hover{
+    background-color:#7f8283;
+    cursor: pointer;
+    border-bottom: 4px solid #b3bec4;
+}
+.modal-btn-next:hover{
+    background-color:#6f5627;
+    cursor: pointer;
+    border-bottom: 4px solid #E0AF55;
+}
+
+button:disabled{
+    background-color: #1E3640;
+    border-radius: 10px;
+    border-bottom: 7px solid #11222E;
+}

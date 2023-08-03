@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TicTacToe.css">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="logo.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+
+        <!--MODAL-->
+        <div class="modal" style="display: none" id="modalwin">
+            <div class="modal-target" >
+                <div class="modal-target-p1">
+                    <p>WIN</p>
+                </div>
+                <div class="modal-target-p2">
+                    <strong id="wiplayer">X</strong><p>Won the game</p>
+                </div>
+                <div class="modal-target-btns">
+                    <button id="btn_quit" class="modal-btn-quit" >QUIT</button>
+                    <button id="btn_next" class="modal-btn-next">Next Round</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--------->
+        
+        <div class="container-target">
+            <div class="container-target-controls">
+                <div class="container-controls-img">
+                    <div class="container-controls-img-x"><h2>X</h2></div>
+                    <div class="container-controls-img-o"><h2>O</h2></div>
+                </div>
+                
+                <div class="container-target-controls-turns">
+                    <h2 id="turn_player">X</h2>
+                    <p>Turn</p>
+                </div>
+    
+                <button id="refresh" class="refresh"><span class="material-symbols-outlined">refresh</span></button>
+            </div>
+            <div class="container-target-game">
+                <button class="game-target1 target " id="btn1"></button>
+                <button class="game-target2 target " id="btn2"></button>
+                <button class="game-target3 target " id="btn3"></button>
+                <button class="game-target4 target"  id="btn4"></button>
+                <button class="game-target5 target" id="btn5"></button>
+                <button class="game-target6 target" id="btn6"></button>
+                <button class="game-target7 target" id="btn7"></button>
+                <button class="game-target8 target" id="btn8"></button>
+                <button class="game-target29 target" id="btn9"></button>
+            </div>
+            <div class="container-target-points">
+                <div class="points-x points">
+                    <div class="player">Player1</div>
+                    <div id="player1points" class="points-player1"><h2>0</h2></div>
+                </div>
+                <div class="points-tie points">
+                    <div class="player">Tie</div>
+                    <div id="tie_points" class="points-player1"><h2>0</h2></div>
+                </div>
+                <div class="points-o points">
+                    <div class="player">Player2</div>
+                    <div id="player2points" class="points-player2"><h2>0</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="JS/TicTacToe-game.js"></script>
+</body>
+</html>
